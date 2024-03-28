@@ -1,10 +1,14 @@
 namespace DynamicTyping {
 
-function quacker(duck: any) {
-    duck.quack();
-}
+    function quacker(duck: any) {
+        duck.quack();
+    }
 
-quacker({ quack: function () { console.log("quack"); } });
-quacker(42);
+    quacker({
+        quack: function () {
+            console.log("quack");
+        }
+    });
+    quacker(42);
 
 }

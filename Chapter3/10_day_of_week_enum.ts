@@ -6,7 +6,7 @@ enum DayOfWeek {
     Tuesday,
     Wednesday,
     Thursday,
-    Friday,
+    Friday=7,
     Saturday
 }
 
@@ -20,4 +20,6 @@ function isWeekday(dayOfWeek: DayOfWeek): boolean {
         && dayOfWeek <= DayOfWeek.Friday;
 }
 
+    console.log(DayOfWeek.Sunday)
+    console.log(DayOfWeek.Friday)
 }

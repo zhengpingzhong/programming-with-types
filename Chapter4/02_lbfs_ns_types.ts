@@ -4,7 +4,7 @@ declare const NsType: unique symbol;
 
 class Ns {
     readonly value: number;
-    [NsType]: void;
+    [NsType]?: void;
 
     constructor(value: number) {
         this.value = value;
@@ -15,7 +15,7 @@ declare const LbfsType: unique symbol;
 
 class Lbfs {
     readonly value: number;
-    [LbfsType]: void;
+    [LbfsType]?: void;
 
     constructor(value: number) {
         this.value = value;

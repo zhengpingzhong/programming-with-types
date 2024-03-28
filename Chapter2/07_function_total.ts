@@ -17,7 +17,7 @@ let total: number = getTotal(
      { name: "Mint bubblegum", price: 0.10 },
      { name: "Strawberry bubblegum", price: 0.10 }]
 );
-
+    console.log(total)
 console.log(total == 0.30);
 
 }

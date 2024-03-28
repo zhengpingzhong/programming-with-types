@@ -3,7 +3,7 @@ namespace EmptyTypeImplementation {
 declare const EmptyType: unique symbol;
 
 class Empty {
-    [EmptyType]: void;
+    [EmptyType]?: void;
     private constructor() { }
 }
 
@@ -11,5 +11,7 @@ function raise(message: string): Empty {
     console.error(`Error "${message}" raised at ${new Date()}`);
     throw new Error(message);
 }
+
+raise("hello world")
 
 }
